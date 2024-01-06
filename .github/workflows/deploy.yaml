@@ -14,5 +14,5 @@ jobs:
       - name: Deploy Stage
         uses: fjogeleit/http-request-action@v1
         with:
-          url: "http://31.14.17.154/reload-solana-speedrun/${{ secrets.DEPLOY_KEY }}"
+          url: "http://31.14.17.154:8000/reload-solana-speedrun/${{ secrets.DEPLOY_KEY }}"
           method: "GET"
